@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="NYC Citi Bike Trip Project" />
+    <meta name="author" content="Your Name" />
+    <title>Web App</title>
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles -->
+    <link href="static/css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="results.html">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('static/assets/img/wine.jpg'); background-size: cover;">
+        <div class="container text-center">
+            <div class="site-heading">
+                <h1>NYC Citi Bike Trip Project</h1>
+                <span class="subheading">NYC Bike Share</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="text-center">Please Fill The Information</h2>
+                    </div>
+                    <div class="card-body">
+                        <form action="/predict" method="post">
+                            <div class="form-group">
+                                <label for="start_station_id">Start Station ID</label>
+                                <input type="text" name="start_station_id" id="start_station_id" class="form-control"
+                                    placeholder="Enter Start Station ID" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="end_station_id">End Station ID</label>
+                                <input type="text" name="end_station_id" id="end_station_id" class="form-control"
+                                    placeholder="Enter End Station ID" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="rideable_type_numeric">Rideable Type</label>
+                                <input type="text" name="rideable_type_numeric" id="rideable_type_numeric"
+                                    class="form-control" placeholder="Enter Rideable Type" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="member_casual_numeric">Member Casual</label>
+                                <input type="text" name="member_casual_numeric" id="member_casual_numeric"
+                                    class="form-control" placeholder="Enter Member Casual Type" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="trip_distance_miles">Trip Distance (miles)</label>
+                                <input type="text" name="trip_distance_miles" id="trip_distance_miles"
+                                    class="form-control" placeholder="Enter Trip Distance" required>
+                            </div>
+                            <div class="form-group text-center">
+                                <input type="submit" name="register" class="btn btn-primary" value="Predict">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-light mt-5 py-3">
+        <div class="container text-center">
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/kahramanmurat/">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://github.com/kahramanmurat">
+                        <span class="fa-stack fa-lg">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <div class="small text-muted fst-italic">© Your Website 2024</div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="static/js/scripts.js"></script>
+</body>
+
+</html>
