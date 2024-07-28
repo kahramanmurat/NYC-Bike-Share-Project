@@ -1,9 +1,0 @@
-﻿{
-  "agentId": 2,
-  "agentName": "self-hosted",
-  "poolId": 1,
-  "poolName": "Default",
-  "serverUrl": "https://pipelinesghubeus3.actions.githubusercontent.com/24swM3GI4pTKtinjw5CPU32r5Bv2Q7aENHQqAPCQ52f7Z7cCwS/",
-  "gitHubUrl": "https://github.com/kahramanmurat/NYC-Bike-Share-Project",
-  "workFolder": "./run.sh"
-}
