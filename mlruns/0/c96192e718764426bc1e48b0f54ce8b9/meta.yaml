@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ubuntu/NYC-Bike-Share-Project/mlruns/0/c96192e718764426bc1e48b0f54ce8b9/artifacts
+end_time: 1722179215305
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c96192e718764426bc1e48b0f54ce8b9
+run_name: debonair-grub-803
+run_uuid: c96192e718764426bc1e48b0f54ce8b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722179212817
+status: 3
+tags: []
+user_id: ubuntu
