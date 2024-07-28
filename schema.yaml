@@ -1,1 +1,11 @@
-key: val
+COLUMNS:
+  start_station_id: float64 
+  end_station_id: float64 
+  rideable_type_numeric: int64
+  member_casual_numeric: int64
+  trip_distance_miles: float64
+  duration_min: float64
+
+
+TARGET_COLUMN:
+  name: duration_min
