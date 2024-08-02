@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ubuntu/NYC-Bike-Share-Project/mlruns/0/9169803242fa4468a213952734f17b39/artifacts
+end_time: 1722184746632
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9169803242fa4468a213952734f17b39
+run_name: spiffy-donkey-13
+run_uuid: 9169803242fa4468a213952734f17b39
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1722184744135
+status: 3
+tags: []
+user_id: ubuntu
