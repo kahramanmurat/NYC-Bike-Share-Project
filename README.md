@@ -93,3 +93,8 @@ The pipeline of the project consists of the following stages:
     conda create -n mlproj python=3.8 -y
     conda activate mlproj
     ```
+3. Install the required dependencies:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
