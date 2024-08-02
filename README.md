@@ -168,5 +168,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 NYC Bike Share Project deployed in AWS:
 
-
+Data Entry:
 ![Real Time Data Query](images/mlops_fill.png)
+
+Prediction:
+![Prediction Result](images/mlops_fill.png)
