@@ -164,3 +164,9 @@ Steps for Deployment
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+NYC Bike Share Project deployed in AWS:
+
+
+![Real Time Data Query](images/mlops_fill.png)
