@@ -53,6 +53,7 @@ NYC-Bike-Share-Project/
 ├── setup.py
 ├── template.py
 └── test.py
+```
 
 ## Pipeline
 
