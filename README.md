@@ -59,12 +59,13 @@ NYC-Bike-Share-Project/
 
 The pipeline of the project consists of the following stages:
 
-Data Ingestion: Fetch raw data from the NYC Bike Share dataset.
-Data Preprocessing: Clean and preprocess the data for model training.
-Feature Engineering: Calculate trip distances and prepare features.
-Model Training: Train the machine learning model using the prepared features.
-Model Evaluation: Evaluate the trained model on validation data.
-Model Deployment: Deploy the model for real-time predictions.
+- **Data Ingestion:** Fetch raw data from the NYC Bike Share dataset.
+- **Data Preprocessing:** Clean and preprocess the data for model training.
+- **Feature Engineering:** Calculate trip distances and prepare features.
+- **Model Training:** Train the machine learning model using the prepared features.
+- **Model Evaluation:** Evaluate the trained model on validation data.
+- **Model Deployment:** Deploy the model for real-time predictions.
+
 
 ## Workflows
 
