@@ -98,3 +98,10 @@ The pipeline of the project consists of the following stages:
     ```sh
     pip install -r requirements.txt
     ```
+4. Set up the necessary environment variables:
+
+    ```sh
+    export MLFLOW_TRACKING_URI=https://dagshub.com/kahramanmurat/NYC-Bike-Share-Project.mlflow
+    export MLFLOW_TRACKING_USERNAME=kahramanmurat
+    export MLFLOW_TRACKING_PASSWORD=""
+    ```
