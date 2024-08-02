@@ -80,8 +80,15 @@ Update app.py
 
 ## Setup
 
+1. Clone the repository:
 
-```sh
-git clone https://dagshub.com/kahramanmurat/NYC-Bike-Share-Project.mlflow.git
-cd NYC-Bike-Share-Project
-```
+    ```sh
+    git clone https://github.com/kahramanmurat/NYC-Bike-Share-Project.git
+    cd NYC-Bike-Share-Project
+    ```
+2. Create a conda environment and activate it:
+
+    ```sh
+    conda create -n mlproj python=3.8 -y
+    conda activate mlproj
+    ```
