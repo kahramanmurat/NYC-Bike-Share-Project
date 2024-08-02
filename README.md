@@ -105,3 +105,62 @@ The pipeline of the project consists of the following stages:
     export MLFLOW_TRACKING_USERNAME=kahramanmurat
     export MLFLOW_TRACKING_PASSWORD=""
     ```
+
+## Usage
+
+To run the pipeline, execute the following command:
+
+    ```sh
+    python app.py
+    ```
+
+    http://localhost:8080
+
+## MLflow
+
+MLflow is used to track experiments, log metrics, and manage model versions. DagsHub is used for managing data and model versioning.
+
+Set environment variables for DagsHub:
+
+    ```sh
+    export MLFLOW_TRACKING_URI=https://dagshub.com/kahramanmurat/NYC-Bike-Share-Project.mlflow
+    export MLFLOW_TRACKING_USERNAME=kahramanmurat
+    export MLFLOW_TRACKING_PASSWORD=""
+    ```
+## AWS-CICD-Deployment-with-Github-Actions
+
+Steps for Deployment
+
+1. Login to AWS console.
+2. Create IAM user for deployment with specific access:
+    - EC2 access for virtual machine
+    - ECR for storing Docker images
+    - Attach policies: `AmazonEC2ContainerRegistryFullAccess` and `AmazonEC2FullAccess`
+3. Create ECR repository: `963656558707.dkr.ecr.us-east-1.amazonaws.com/mlproj2`
+4. Create EC2 machine (Ubuntu)
+5. Install Docker in EC2 Machine
+
+    ```sh
+    sudo apt-get update -y
+    sudo apt-get upgrade
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sudo sh get-docker.sh
+    sudo usermod -aG docker ubuntu
+    newgrp docker
+    ```
+
+6. Configure EC2 as self-hosted runner:
+    - Go to `Settings` > `Actions` > `Runner` > `New self-hosted runner`
+    - Choose OS
+    - Run commands one by one
+7. Setup GitHub secrets:
+    - `AWS_ACCESS_KEY_ID`
+    - `AWS_SECRET_ACCESS_KEY`
+    - `AWS_REGION=us-east-1`
+    - `AWS_ECR_LOGIN_URI=963656558707.dkr.ecr.us-east-1.amazonaws.com`
+    - `ECR_REPOSITORY_NAME=mlproj`
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
