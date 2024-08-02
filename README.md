@@ -172,4 +172,4 @@ Data Entry:
 ![Real Time Data Query](images/mlops_fill.png)
 
 Prediction:
-![Prediction Result](images/mlops_fill.png)
+![Prediction Result](images/mlops_predict.png)
